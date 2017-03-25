@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>贪吃蛇小游戏</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+	<!-- 游戏区域，两个canvas重叠 -->
+		<canvas id="bot" width="600" height="500">您的浏览器不支持canvas，请更换浏览器！</canvas>
+		<canvas id="top" width="600" height="500"></canvas>
+		<!-- 右边控制区和显示消息 -->
+		<div class="controller">
+			<div class="start">
+				<button id="startGame">开始游戏</button>
+			</div>
+			<div class="restart">
+				<button id="restartGame">重新开始</button>
+			</div>
+			<div class="msg">
+				<p class="nameOfGame">H5贪吃蛇v1.0</p>
+				<ul class="messages" id="msgList">
+					<li>点击开始游戏按钮</li>
+					<li>游戏可用方向键和WASD键控制！</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>
